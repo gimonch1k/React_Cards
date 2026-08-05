@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 
 import { API_URL } from "../../constants";
 import { QuestionCardList } from "../../components/QuestionCardList";
-
-import styles from "./HomePage.module.scss";
+import { Loader } from "../../components/Loader";
 
 export function HomePage() {
   const [questions, setQuestions] = useState([]);
@@ -23,6 +22,7 @@ export function HomePage() {
 
   return (
     <>
+      <Loader />
       <QuestionCardList cards={questions} />
     </>
   );
