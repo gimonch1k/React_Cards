@@ -2,22 +2,19 @@ import { Button } from "../Button";
 
 import styles from "./QuestionCard.module.scss";
 
-export function QuestionCard() {
+export function QuestionCard({ card }) {
   return (
     <div className={styles.card}>
       <div className={styles.labels}>
-        <div>Level: 1</div>
-        <div>Complited</div>
+        <div>Level: {card.level}</div>
+        <div>{card.completed}</div>
       </div>
 
-      <h5 className={styles.title}>Що таке JSX?</h5>
+      <h5 className={styles.title}>{card.question}</h5>
 
       <div className={styles.answers}>
         <span>short answer: </span>
-        <p className={styles.answer}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores,
-          error.
-        </p>
+        <p className={styles.answer}>{card.answer}</p>
       </div>
 
       <Button onClick={() => {}}>View</Button>
