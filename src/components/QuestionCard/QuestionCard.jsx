@@ -7,7 +7,7 @@ export function QuestionCard({ card }) {
     <div className={styles.card}>
       <div className={styles.labels}>
         <div>Level: {card.level}</div>
-        <div>{card.completed}</div>
+        <div>{card.completed ? "Completed" : "Not Completed"}</div>
       </div>
 
       <h5 className={styles.title}>{card.question}</h5>
