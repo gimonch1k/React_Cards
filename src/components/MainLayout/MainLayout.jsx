@@ -1,8 +1,9 @@
 // import "./MainLayout.module.scss";
 import { Outlet } from "react-router-dom";
-import styles from "./MainLayout.module.scss";
 
 import { Header } from "../Header";
+
+import styles from "./MainLayout.module.scss";
 
 export function MainLayout() {
   const currentYear = new Date().getFullYear();

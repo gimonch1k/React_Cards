@@ -3,6 +3,9 @@
   --text-color: #fff;
   --btn-bg-color: #383b3f;
   --btn-text-color: #fff;
+  --card-bg-color: #343a46;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 * {
@@ -22,6 +25,7 @@ body {
     --text-color: #000;
     --btn-bg-color: #16444f;
     --btn-text-color: #57c4dc;
+    --card-bg-color: #ebedf0;
   }
 }
 
@@ -31,5 +35,6 @@ body {
     --text-color: #fff;
     --btn-bg-color: #383b3f;
     --btn-text-color: #fff;
+    --card-bg-color: #343a46;
   }
 }
