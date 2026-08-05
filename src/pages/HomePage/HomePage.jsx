@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { API_URL } from "../../constants";
-import { QuestionCard } from "../../components/QuestionCard";
-import { Button } from "../../components/Button";
+import { QuestionCardList } from "../../components/QuestionCardList";
 
 import styles from "./HomePage.module.scss";
 
@@ -24,10 +23,7 @@ export function HomePage() {
 
   return (
     <>
-      homepage
-      {questions.map((card) => (
-        <QuestionCard card={card} key={card.id} />
-      ))}
+      <QuestionCardList cards={questions} />
     </>
   );
 }
